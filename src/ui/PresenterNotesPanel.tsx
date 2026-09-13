@@ -57,7 +57,7 @@ export default function PresenterNotesPanel({
   return (
     <aside
       aria-label="Notas do apresentador"
-      className="flex max-h-[40vh] w-full max-w-md flex-col gap-2 overflow-y-auto rounded-md bg-black/60 p-4 text-sm text-gray-100 backdrop-blur-sm"
+      className="flex max-h-[30vh] w-full max-w-md flex-col gap-2 overflow-y-auto rounded-md bg-black/60 p-4 text-sm text-gray-100 backdrop-blur-sm"
     >
       <div className="flex items-center justify-between">
         <h2 className="text-xs font-semibold uppercase tracking-wide text-gray-400">

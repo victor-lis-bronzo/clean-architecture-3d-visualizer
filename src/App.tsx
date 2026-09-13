@@ -22,8 +22,8 @@
  *  4. **Composição da cena**: `SceneCanvas` hospeda `ConcentricSpheres`,
  *     `BoundaryRings`, `DataParticles` (recebendo `reducedMotion`),
  *     `CameraController` e as luzes (ambient + directional) necessárias para os
- *     materiais PBR ficarem visíveis. O `Overlay` fica por cima com os slots do
- *     timer e das notas (o `Overlay` já compõe os `TourControls`).
+ *     materiais PBR ficarem visíveis. O `Overlay` fica por cima com o slot das
+ *     notas (o `Overlay` já compõe os `TourControls`).
  *  5. **Wiring dos adaptadores de plataforma** ao store: atalhos de teclado,
  *     tela cheia, breakpoint de viewport e preferência de movimento reduzido.
  *
@@ -43,7 +43,6 @@ import DataParticles from './scene/DataParticles';
 import CameraController from './scene/CameraController';
 
 import Overlay from './ui/Overlay';
-import PresentationTimer from './ui/PresentationTimer';
 import PresenterNotesPanel from './ui/PresenterNotesPanel';
 import WebGLFallback from './ui/WebGLFallback';
 
@@ -266,13 +265,9 @@ function AppContent(): React.JSX.Element {
       )}
 
       {/* UI Overlay por cima da cena. O Overlay já compõe os TourControls;
-          aqui injetamos os slots do timer e do painel de notas. */}
+          aqui injetamos o slot do painel de notas. */}
       {webglSupported ? (
-        <Overlay
-          width={viewport.width}
-          timerSlot={<PresentationTimer />}
-          notesSlot={<PresenterNotesPanel />}
-        />
+        <Overlay width={viewport.width} notesSlot={<PresenterNotesPanel />} />
       ) : null}
     </div>
   );

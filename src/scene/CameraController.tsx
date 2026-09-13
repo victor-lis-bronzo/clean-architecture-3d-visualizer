@@ -58,13 +58,15 @@ import {
  * Câmera de visão geral usada como destino do reset (req. 3.3).
  *
  * Enquadra as 4 Layers a partir de uma posição afastada, mirando o centro da
- * cena. Espelha a `OVERVIEW_CAMERA` do passo 1 em `tour-data/tour-data.ts`
- * (que não é exportada), mantendo `scene/` autocontido: o reset sempre leva à
- * mesma visão geral, independentemente do passo ativo. Definida localmente para
- * respeitar a restrição de criar apenas este arquivo.
+ * cena. Fica no octante −X/−Z para encarar de frente a abertura do corte de 90°
+ * (interior exposto), de modo que o reset também olhe PARA DENTRO da fatia e
+ * nunca para o lado sólido/traseiro. Espelha a `OVERVIEW_CAMERA` do passo 1 em
+ * `tour-data/tour-data.ts` (que não é exportada), mantendo `scene/` autocontido:
+ * o reset sempre leva à mesma visão geral, independentemente do passo ativo.
+ * Definida localmente para respeitar a restrição de criar apenas este arquivo.
  */
 const OVERVIEW_CAMERA: CameraConfig = {
-  position: [9, 6, 9],
+  position: [-7.66, 5, -6.43],
   target: [0, 0, 0],
 } as const;
 
