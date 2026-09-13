@@ -94,4 +94,49 @@ describe('camera-math — helpers puros de câmera', () => {
       );
     });
   });
+
+  // ─── TASK 8.3 ──────────────────────────────────────────────────────────
+  // Feature: clean-architecture-3d-visualizer, Property 14: Clamp da duração da transição de câmera. Para qualquer duração solicitada d, resolveDuration(d) está em [0.3, 2.0]; quando d está ausente/indefinida o resultado é 1.0.
+  describe('Property 14: clamp da duração da transição de câmera', () => {
+    it('resolveDuration(d) permanece em [0.3, 2.0] para qualquer d finito (Validates: Requirements 3.2)', () => {
+      fc.assert(
+        fc.property(arbFinite(-1000, 1000), (d) => {
+          const result = resolveDuration(d);
+          expect(result).toBeGreaterThanOrEqual(MIN_DURATION_SEC);
+          expect(result).toBeLessThanOrEqual(MAX_DURATION_SEC);
+        }),
+        { numRuns: 100 },
+      );
+    });
+
+    it('resolveDuration recai no padrão 1.0 para undefined/null/não-finito (Validates: Requirements 3.2)', () => {
+      fc.assert(
+        fc.property(
+          fc.constantFrom<number | null | undefined>(
+            undefined,
+            null,
+            Number.NaN,
+            Number.POSITIVE_INFINITY,
+            Number.NEGATIVE_INFINITY,
+          ),
+          (d) => {
+            expect(resolveDuration(d)).toBe(DEFAULT_DURATION_SEC);
+          },
+        ),
+        { numRuns: 100 },
+      );
+    });
+
+    it('resolveDuration preserva valores já dentro do intervalo (Validates: Requirements 3.2)', () => {
+      fc.assert(
+        fc.property(
+          fc.double({ min: MIN_DURATION_SEC, max: MAX_DURATION_SEC, noNaN: true }),
+          (d) => {
+            expect(resolveDuration(d)).toBe(d);
+          },
+        ),
+        { numRuns: 100 },
+      );
+    });
+  });
 });
