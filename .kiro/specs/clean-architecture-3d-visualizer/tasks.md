@@ -114,7 +114,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Validates: Requirements 8.4**
 
 - [ ] 6. Implementar o Presentation Store (Zustand)
-  - [-] 6.1 Criar o store compartilhado e os seletores
+  - [x] 6.1 Criar o store compartilhado e os seletores
     - Criar `state/presentation-store.ts` (Zustand) com `activeStepOrder`, `transition`, `timer`, `notesVisible` (inicia `false`), `isFullscreen`, `dataError`, `webglSupported`, e as ações `next`/`prev`/`resetCamera`/`toggleNotes`/`setFullscreen` delegando às funções puras
     - Criar `state/selectors.ts` para leituras derivadas; definir estado inicial (passo 1 ativo, notas ocultas)
     - _Requirements: 4.2, 8.6_
