@@ -79,7 +79,7 @@ export default function TourControls({
         <h2 className="text-lg font-semibold tracking-tight sm:text-xl">
           {title}
         </h2>
-        <p className="max-h-32 overflow-y-auto pr-2 text-sm leading-relaxed text-gray-200 sm:max-h-40 sm:text-base">
+        <p className="tour-scroll max-h-24 overflow-y-auto pr-2 text-sm leading-relaxed text-gray-200 sm:max-h-32 sm:text-base">
           {body}
         </p>
       </div>
