@@ -1,0 +1,4 @@
+# DOMÍNIO 1: DADOS (núcleo, sem dependências).
+# Conteúdo estático do tour: types.ts, tour-data.ts, palette.ts, validate.ts.
+# Regra de importação: NÃO importa de scene/, ui/, state/ nem de React.
+# Implementado nas tarefas 2.1–2.5.

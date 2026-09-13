@@ -1,0 +1,601 @@
+{
+  "pbtResults": {
+    "3.2 Escrever teste de propriedade para clamp e gating da navegação": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260472852
+    },
+    "3.3 Escrever teste de propriedade para reversibilidade da navegação interior": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260473958
+    },
+    "2.3 Escrever teste de propriedade para dados válidos do Tour_Data": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260502724
+    },
+    "2.4 Escrever teste de propriedade para dados inválidos do Tour_Data": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260503645
+    },
+    "8.7 Escrever teste de propriedade para o clamp da contagem de partículas": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260749763
+    },
+    "8.8 Escrever teste de propriedade para a contenção das partículas": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260751211
+    },
+    "8.9 Escrever teste de propriedade para o congelamento sob reduced-motion": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260752615
+    },
+    "8.10 Escrever teste de propriedade para a direção das partículas": {
+      "status": "passed",
+      "lastRunTimestamp": 1789260753352
+    }
+  },
+  "executionHistory": {
+    "1.1 Inicializar o projeto Vite + React + TypeScript + Tailwind": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623184
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259630091
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259859933
+      }
+    ],
+    "1.2 Configurar o tooling de testes Vitest + fast-check": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623189
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259864365
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260048609
+      }
+    ],
+    "1.3 Configurar a regra ESLint de desacoplamento arquitetural": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623194
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259865314
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260049601
+      }
+    ],
+    "2.1 Definir os tipos base e a paleta de cores": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623198
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259866401
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260047210
+      }
+    ],
+    "2.2 Implementar o validador do Tour_Data com Zod": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623201
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260053741
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260196603
+      }
+    ],
+    "2.5 Definir os 8 Tour_Steps do \"CriarPedido\"": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623204
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260205089
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260383427
+      }
+    ],
+    "3.1 Implementar as funções puras de navegação e destaque": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623208
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260206038
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260380981
+      }
+    ],
+    "4.1 Implementar as funções puras de faixa de cor e formatação": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623211
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260207436
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260380033
+      }
+    ],
+    "5.1 Implementar `toggleNotes`, `truncateNotes` e resolução de estado vazio": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623214
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260208486
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260382389
+      }
+    ],
+    "6.1 Criar o store compartilhado e os seletores": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623218
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260645781
+      }
+    ],
+    "7. Checkpoint — Garantir que a lógica pura e o store passam nos testes": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623223
+      }
+    ],
+    "8.1 Implementar helpers puros de câmera": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623227
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260054690
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260197551
+      }
+    ],
+    "8.6 Implementar helpers puros de partículas e geometria": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623231
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260056091
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260199001
+      }
+    ],
+    "9.1 Implementar o SceneCanvas com checagem de WebGL": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623234
+      }
+    ],
+    "9.2 Implementar as esferas concêntricas, os anéis e as partículas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623237
+      }
+    ],
+    "9.3 Implementar o CameraController": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623241
+      }
+    ],
+    "10.1 Implementar `computeAspect` e o mapeamento de breakpoints": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623244
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260056959
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260199930
+      }
+    ],
+    "11.1 Implementar o Overlay responsivo e os controles do tour": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623247
+      }
+    ],
+    "11.2 Implementar o timer, o painel de notas e o fallback WebGL": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623251
+      }
+    ],
+    "12.1 Implementar o hook de atalhos de teclado com gating em inputs de texto": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623256
+      }
+    ],
+    "12.3 Implementar os hooks de fullscreen, reduced-motion e breakpoint de viewport": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623259
+      }
+    ],
+    "13.1 Compor a Scene, o UI Overlay e os adaptadores": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623263
+      }
+    ],
+    "14. Checkpoint — Garantir que a aplicação integrada passa nos testes": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623266
+      }
+    ],
+    "15.1 Finalizar a configuração de build e os arquivos de deploy": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623269
+      }
+    ],
+    "16. Checkpoint final — Garantir que todos os testes passam": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789259623273
+      }
+    ],
+    "1. Configurar o scaffold do projeto e o tooling de qualidade": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260049605
+      }
+    ],
+    "8. Implementar as funções puras de câmera e partículas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260199004
+      }
+    ],
+    "10. Implementar os helpers puros de responsividade": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260199938
+      }
+    ],
+    "4. Implementar a lógica pura do timer": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260380036
+      }
+    ],
+    "3. Implementar a lógica pura do Tour_Controller": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260380984
+      }
+    ],
+    "5. Implementar as funções puras de notas do apresentador": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260382396
+      }
+    ],
+    "2. Implementar o domínio Tour_Data (núcleo, sem dependências)": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260383431
+      }
+    ],
+    "2.3 Escrever teste de propriedade para dados válidos do Tour_Data": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260404894
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260519975
+      }
+    ],
+    "2.4 Escrever teste de propriedade para dados inválidos do Tour_Data": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260406293
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260520927
+      }
+    ],
+    "2.6 Escrever teste de exemplo para o Tour_Data do \"CriarPedido\"": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260407247
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260522325
+      }
+    ],
+    "3.2 Escrever teste de propriedade para clamp e gating da navegação": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260408662
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260523277
+      }
+    ],
+    "3.3 Escrever teste de propriedade para reversibilidade da navegação interior": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260409666
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260524430
+      }
+    ],
+    "4.2 Escrever teste de propriedade para as faixas de cor do timer": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260528474
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260629745
+      }
+    ],
+    "4.3 Escrever teste de propriedade para o round-trip de mm:ss": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260529922
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260630685
+      }
+    ],
+    "4.4 Escrever teste de propriedade para pausar/retomar preservando o tempo": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260530878
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260632079
+      }
+    ],
+    "4.5 Escrever teste de propriedade para reiniciar o timer": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260532276
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260633488
+      }
+    ],
+    "5.2 Escrever teste de propriedade para a involução do toggle de notas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260533677
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260634429
+      }
+    ],
+    "5.3 Escrever teste de propriedade para o truncamento das notas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260534624
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260635879
+      }
+    ],
+    "5.4 Escrever teste de propriedade para o estado vazio das notas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260535680
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260636644
+      }
+    ],
+    "8.2 Escrever teste de propriedade para o easing com velocidade nula nas extremidades": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260642206
+      }
+    ],
+    "8.7 Escrever teste de propriedade para o clamp da contagem de partículas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260643606
+      }
+    ],
+    "10.2 Escrever teste de propriedade para a visibilidade responsiva por breakpoint": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260645010
+      }
+    ],
+    "8.3 Escrever teste de propriedade para o clamp da duração da transição": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260650477
+      }
+    ],
+    "8.4 Escrever teste de propriedade para o no-op de câmera ausente": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260651878
+      }
+    ],
+    "8.5 Escrever teste de propriedade para o gating dos controles manuais": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260652827
+      }
+    ],
+    "8.8 Escrever teste de propriedade para a contenção das partículas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260654226
+      }
+    ],
+    "8.9 Escrever teste de propriedade para o congelamento sob reduced-motion": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260655183
+      }
+    ],
+    "8.10 Escrever teste de propriedade para a direção das partículas": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260656578
+      }
+    ],
+    "10.3 Escrever teste de propriedade para o aspect ratio no redimensionamento": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789260657612
+      }
+    ]
+  }
+}

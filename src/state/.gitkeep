@@ -1,0 +1,4 @@
+# COORDENAÇÃO: store compartilhado + Tour_Controller.
+# presentation-store.ts (Zustand), tour-controller.ts, selectors.ts,
+# timer.ts, notes.ts. Importa apenas de tour-data/.
+# Implementado nas tarefas 3.x, 4.x, 5.x, 6.x.

@@ -1,0 +1,4 @@
+# DOMÍNIO 3: 2D (overlay DOM). NÃO importa de scene/.
+# Overlay.tsx, TourControls.tsx, PresentationTimer.tsx,
+# PresenterNotesPanel.tsx, WebGLFallback.tsx, responsive.ts.
+# Implementado nas tarefas 10.x e 11.x.

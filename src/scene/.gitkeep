@@ -1,0 +1,4 @@
+# DOMÍNIO 2: 3D (R3F Canvas). NÃO importa de ui/.
+# SceneCanvas.tsx, ConcentricSpheres.tsx, BoundaryRings.tsx,
+# DataParticles.tsx, CameraController.tsx, geometry.ts, camera-math.ts.
+# Implementado nas tarefas 8.x e 9.x.
