@@ -139,4 +139,29 @@ describe('camera-math — helpers puros de câmera', () => {
       );
     });
   });
+
+  // ─── TASK 8.4 ──────────────────────────────────────────────────────────
+  // Feature: clean-architecture-3d-visualizer, Property 15: Ausência de configuração de câmera é no-op. Para qualquer Tour_Step cujo campo de câmera seja nulo/ausente, iniciar a transição é uma no-op: isTransitioning permanece false e a posição/alvo da câmera não mudam.
+  describe('Property 15: ausência de configuração de câmera é no-op', () => {
+    it('shouldStartTransition(null/undefined) é false — no-op (Validates: Requirements 3.6)', () => {
+      fc.assert(
+        fc.property(
+          fc.constantFrom<CameraConfig | null | undefined>(null, undefined),
+          (config) => {
+            expect(shouldStartTransition(config)).toBe(false);
+          },
+        ),
+        { numRuns: 100 },
+      );
+    });
+
+    it('shouldStartTransition(CameraConfig válida) é true (Validates: Requirements 3.6)', () => {
+      fc.assert(
+        fc.property(arbCameraConfig(), (config) => {
+          expect(shouldStartTransition(config)).toBe(true);
+        }),
+        { numRuns: 100 },
+      );
+    });
+  });
 });
