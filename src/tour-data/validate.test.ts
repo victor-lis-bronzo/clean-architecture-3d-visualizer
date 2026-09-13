@@ -174,7 +174,7 @@ describe('validateTourData — Property 21: dados inválidos são rejeitados com
   // Feature: clean-architecture-3d-visualizer, Property 21: Dados inválidos do Tour_Data são rejeitados com localização do erro — Para qualquer Tour_Data que viole ao menos uma regra (campo obrigatório ausente/vazio, valor fora dos limites, order duplicado ou não sequencial, ou focusLayer fora de LAYER_ORDER), validateTourData retorna ao menos um TourDataError que identifica o stepOrder afetado e o field inválido; no caso específico de Layer inexistente, o erro reporta field = 'focusLayer'.
   it('rejeita dados com uma violação e localiza o stepOrder/field afetados', () => {
     fc.assert(
-      fc.property(arbInvalidTourData, ({ steps, index, violation, originalOrder }) => {
+      fc.property(arbInvalidTourData, ({ steps, violation, originalOrder }) => {
         const errors = validateTourData(steps);
 
         // Ao menos um erro deve ser reportado.

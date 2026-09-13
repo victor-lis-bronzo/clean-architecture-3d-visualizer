@@ -129,3 +129,24 @@ export function sphereCutParamsForLayer(
     thetaLength: Math.PI,
   };
 }
+
+/**
+ * Decide se a cena 3D deve ser renderizada para as dimensões informadas.
+ *
+ * Predicado puro, local ao domínio `scene/`: retorna `false` quando qualquer
+ * dimensão é não positiva (`w <= 0` ou `h <= 0`), sinalizando que o
+ * `frameloop` do R3F deve ser suspenso preservando o estado atual da cena;
+ * retorna `true` somente quando ambas as dimensões são estritamente maiores
+ * que zero (requisito 11.5).
+ *
+ * NOTA: um predicado equivalente existe em `ui/responsive.ts`, mas `scene/`
+ * NÃO pode importar de `ui/` (Regra da Dependência, req. 5.1). Por isso a
+ * lógica trivial é duplicada aqui, mantendo os domínios desacoplados.
+ *
+ * @param w Largura do viewport em pixels.
+ * @param h Altura do viewport em pixels.
+ * @returns `true` se ambas as dimensões forem `> 0`; caso contrário `false`.
+ */
+export function shouldRender(w: number, h: number): boolean {
+  return w > 0 && h > 0;
+}

@@ -168,7 +168,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Validates: Requirements 2.2**
 
 - [ ] 9. Implementar os componentes da Scene (3D)
-  - [~] 9.1 Implementar o SceneCanvas com checagem de WebGL
+  - [x] 9.1 Implementar o SceneCanvas com checagem de WebGL
     - Criar `scene/SceneCanvas.tsx` com o `<Canvas>` R3F, checagem de suporte a WebGL antes de montar (não montar esferas em falha) e suspensão do `frameloop` quando a dimensão do viewport for ≤ 0
     - _Requirements: 1.6, 11.5_
 
