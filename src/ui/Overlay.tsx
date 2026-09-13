@@ -7,14 +7,12 @@
  *    ilha interativa reativa `pointer-events` localmente).
  *  - Compor o {@link TourControls} (título/texto do passo, navegação,
  *    indicador "N de 8").
- *  - Expor *slots* onde o timer e o painel de notas (tarefa 11.2) se encaixam,
- *    via as props `timerSlot` e `notesSlot`, sem que este componente conheça
- *    suas implementações.
+ *  - Expor um *slot* onde o painel de notas (tarefa 11.2) se encaixa, via a
+ *    prop `notesSlot`, sem que este componente conheça sua implementação.
  *  - Aplicar a visibilidade responsiva por breakpoint (req. 11.2/11.3/11.4)
  *    reutilizando o helper puro {@link overlayVisibilityFor}:
- *      • `w >= 1024`       → controles + timer + progresso
- *      • `640 <= w < 1024` → controles + timer (sem progresso)
- *      • `w < 640`         → apenas controles
+ *      • `w >= 1024`       → controles + progresso
+ *      • `w < 1024`        → apenas controles (sem progresso)
  *    Os controles de navegação estão sempre visíveis (invariante da Property 23).
  *
  * Regra da Dependência (req. 5.1): pertence a `ui/` e NÃO importa de `scene/`.
@@ -39,11 +37,6 @@ export interface OverlayProps {
    * omitida, o componente lê `window.innerWidth` e reage a `resize`.
    */
   width?: number;
-  /**
-   * Slot do timer de apresentação (tarefa 11.2). Renderizado apenas quando o
-   * breakpoint permite exibir o timer (`w >= 640`).
-   */
-  timerSlot?: ReactNode;
   /**
    * Slot do painel de notas do apresentador (tarefa 11.2). A sua própria
    * visibilidade (oculto/visível) é controlada pelo store; o Overlay apenas
@@ -77,12 +70,11 @@ function useResolvedWidth(width?: number): number {
 }
 
 /**
- * Contêiner responsivo do UI_Overlay. Compõe os controles do tour e reserva os
- * slots do timer e das notas, aplicando os breakpoints do requisito 11.
+ * Contêiner responsivo do UI_Overlay. Compõe os controles do tour e reserva o
+ * slot das notas, aplicando os breakpoints do requisito 11.
  */
 export default function Overlay({
   width,
-  timerSlot,
   notesSlot,
 }: OverlayProps): React.JSX.Element {
   const resolvedWidth = useResolvedWidth(width);
@@ -93,13 +85,6 @@ export default function Overlay({
       className="pointer-events-none absolute inset-0 z-10 flex flex-col justify-between p-4 sm:p-6"
       aria-label="Interface de apresentação"
     >
-      {/* Faixa superior: timer (>= 640px) à direita. */}
-      <div className="flex items-start justify-end">
-        {visibility.timer && timerSlot ? (
-          <div className="pointer-events-auto">{timerSlot}</div>
-        ) : null}
-      </div>
-
       {/* Painel de notas (visibilidade própria controlada pelo store). */}
       {notesSlot ? (
         <div className="pointer-events-auto flex justify-center">

@@ -72,12 +72,14 @@ export default function TourControls({
       className="pointer-events-auto flex w-full max-w-2xl flex-col gap-3 rounded-xl bg-black/60 p-4 text-white shadow-lg backdrop-blur"
       aria-label="Controles do tour"
     >
-      {/* Título + texto do passo ativo (req. 4.7). */}
+      {/* Título + texto do passo ativo (req. 4.7). O título permanece sempre
+          visível; o corpo tem altura limitada e rola internamente para manter
+          o painel mais compacto. */}
       <div aria-live="polite" className="flex flex-col gap-1">
         <h2 className="text-lg font-semibold tracking-tight sm:text-xl">
           {title}
         </h2>
-        <p className="text-sm leading-relaxed text-gray-200 sm:text-base">
+        <p className="max-h-32 overflow-y-auto pr-2 text-sm leading-relaxed text-gray-200 sm:max-h-40 sm:text-base">
           {body}
         </p>
       </div>
