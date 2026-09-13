@@ -45,6 +45,14 @@ export interface TourStep {
   body: string;
   /** Layer em foco — referência a uma Layer existente (req. 5.4). */
   focusLayer: Layer;
+  /**
+   * Quando `true`, o passo é uma visão geral (overview): a câmera se afasta
+   * para enquadrar todas as camadas e NENHUMA Layer é destacada individualmente
+   * (evita sugerir que a síntese "é" uma camada específica). `focusLayer`
+   * continua obrigatório (usado para validação e direção de partículas), mas o
+   * destaque é suprimido neste modo.
+   */
+  overview?: boolean;
   /** Configuração de câmera: posição + alvo. */
   camera: CameraConfig;
   /** Notas do apresentador (0..2000 caracteres). */

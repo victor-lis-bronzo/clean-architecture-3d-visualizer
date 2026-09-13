@@ -96,13 +96,19 @@ export function prev(active: number, isTransitioning: boolean): number {
  * demais Layers como não destacadas (`false`). Enumera todas as Layers via
  * `LAYER_ORDER`, garantindo cobertura total do conjunto de Layers (req. 4.8).
  *
+ * Caso especial de overview: quando `step.overview === true`, o passo é uma
+ * visão geral e NENHUMA Layer é destacada exclusivamente — todas as Layers
+ * retornam `false`. Isso evita sugerir que a síntese "é" uma camada específica,
+ * mesmo que `focusLayer` continue definido (para validação e direção de
+ * partículas).
+ *
  * @param step O Tour_Step ativo.
  * @returns Mapa imutável de `Layer` → `boolean`.
  */
 export function computeHighlight(step: TourStep): HighlightMap {
   const map = {} as Record<Layer, boolean>;
   for (const layer of LAYER_ORDER) {
-    map[layer] = layer === step.focusLayer;
+    map[layer] = step.overview === true ? false : layer === step.focusLayer;
   }
   return map;
 }

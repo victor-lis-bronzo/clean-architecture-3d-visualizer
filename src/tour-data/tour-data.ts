@@ -20,7 +20,7 @@
  * |   5   | Use Cases                              | Use_Cases                     |
  * |   6   | Entities                               | Entities                      |
  * |   7   | Adaptadores de retorno                 | Interface_Adapters            |
- * |   8   | Síntese — "Detalhes são Detalhes"      | Entities                      |
+ * |   8   | Síntese — "Detalhes são Detalhes"      | Entities (overview)           |
  *
  * Convenção de câmera: a câmera fica sempre no octante −X/−Z, de modo a encarar
  * de frente a abertura do corte de 90° (o interior exposto da "cebola"). Os raios
@@ -28,7 +28,9 @@
  * (mais externa). O passo 1 (visão geral) usa uma câmera afastada; os passos de
  * foco aproximam-se progressivamente da Layer em discussão, sempre mirando
  * (target) o centro da cena e olhando PARA DENTRO da fatia aberta — nunca para o
- * lado sólido/traseiro.
+ * lado sólido/traseiro. O passo final de síntese (8) é um overview de zoom-out:
+ * afasta-se de volta ao enquadramento geral (todas as camadas visíveis, sem
+ * destaque exclusivo) e NÃO segue o fluxo de aproximação dos passos anteriores.
  *
  * Os campos respeitam os limites do requisito 5.2 (title 1..80, body 1..1000,
  * notes 0..2000) e a sequência de `order` é 1..8 sem lacunas.
@@ -130,10 +132,13 @@ export const TOUR_DATA: TourData = [
     title: 'Síntese — "Detalhes são Detalhes"',
     body:
       'Fechamos o ciclo do "CriarPedido": HTTP cru → Controller → InputDTO → InputBoundary → UseCase → Entities → OutputBoundary → Presenter → ViewModel → resposta. Cada fronteira foi cruzada com a dependência apontando sempre para dentro. A lição que fica é o mantra do Uncle Bob: "Detalhes são Detalhes". O banco de dados é um detalhe. A web é um detalhe. O framework é um detalhe. Eles orbitam o núcleo e podem ser trocados sem tocá-lo. As regras de negócio — Entities e Use Cases — são independentes de tudo isso, e é essa independência que torna o sistema testável, flexível e duradouro.',
+    // `focusLayer` mantido para validação e direção de partículas; o destaque
+    // exclusivo é SUPRIMIDO por `overview: true` (nenhuma camada é realçada).
     focusLayer: 'Entities',
-    camera: { position: [-2.68, 1.7, -2.25], target: [0, 0, 0] },
+    overview: true,
+    camera: OVERVIEW_CAMERA,
     notes:
-      'Encerramento. Recapitular o caminho completo de ida e volta em uma frase. Bordão final: "Detalhes são Detalhes" (banco, web, framework — todos substituíveis). Amarrar com o payoff prático: independência ⇒ testabilidade (sem servidor/banco), flexibilidade (trocar detalhes) e longevidade. Câmera volta a mirar o núcleo (Entities) para reforçar visualmente onde está o valor. Reservar tempo para perguntas; observar o timer (faixa amarela/vermelha).',
+      'Encerramento. Recapitular o caminho completo de ida e volta em uma frase. Bordão final: "Detalhes são Detalhes" (banco, web, framework — todos substituíveis). Amarrar com o payoff prático: independência ⇒ testabilidade (sem servidor/banco), flexibilidade (trocar detalhes) e longevidade. A câmera faz um zoom-out de volta à visão geral de todas as camadas (não foca as Entities), reforçando que a síntese abrange o sistema inteiro. Reservar tempo para perguntas; observar o timer (faixa amarela/vermelha).',
   },
 ] as const;
 
