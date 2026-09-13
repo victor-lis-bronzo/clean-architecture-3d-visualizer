@@ -209,6 +209,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623223
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261283234
       }
     ],
     "8.1 Implementar helpers puros de câmera": [
@@ -267,6 +272,16 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623237
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261288335
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261553444
       }
     ],
     "9.3 Implementar o CameraController": [
@@ -274,6 +289,16 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623241
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261289284
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261552045
       }
     ],
     "10.1 Implementar `computeAspect` e o mapeamento de breakpoints": [
@@ -298,6 +323,16 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623247
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261290685
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261554395
       }
     ],
     "11.2 Implementar o timer, o painel de notas e o fallback WebGL": [
@@ -305,6 +340,16 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623251
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261291638
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261555795
       }
     ],
     "12.1 Implementar o hook de atalhos de teclado com gating em inputs de texto": [
@@ -312,6 +357,16 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623256
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261293035
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261557250
       }
     ],
     "12.3 Implementar os hooks de fullscreen, reduced-motion e breakpoint de viewport": [
@@ -319,6 +374,16 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623259
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261294281
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261558135
       }
     ],
     "13.1 Compor a Scene, o UI Overlay e os adaptadores": [
@@ -667,6 +732,27 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789261051184
+      }
+    ],
+    "9. Implementar os componentes da Scene (3D)": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261553448
+      }
+    ],
+    "11. Implementar os componentes do UI Overlay (2D)": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261555798
+      }
+    ],
+    "12. Implementar os adaptadores de plataforma": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261558140
       }
     ]
   }

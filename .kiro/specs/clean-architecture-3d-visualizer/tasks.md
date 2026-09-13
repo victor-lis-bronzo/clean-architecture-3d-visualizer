@@ -123,7 +123,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Verificar que ao carregar o store o passo 1 é o único ativo e `notesVisible` é `false`
     - _Requirements: 4.2, 8.6_
 
-- [~] 7. Checkpoint — Garantir que a lógica pura e o store passam nos testes
+- [x] 7. Checkpoint — Garantir que a lógica pura e o store passam nos testes
   - Ensure all tests pass, ask the user if questions arise.
 
 - [x] 8. Implementar as funções puras de câmera e partículas
@@ -167,16 +167,16 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Property 12: Direção das partículas coerente com o passo**
     - **Validates: Requirements 2.2**
 
-- [ ] 9. Implementar os componentes da Scene (3D)
+- [x] 9. Implementar os componentes da Scene (3D)
   - [x] 9.1 Implementar o SceneCanvas com checagem de WebGL
     - Criar `scene/SceneCanvas.tsx` com o `<Canvas>` R3F, checagem de suporte a WebGL antes de montar (não montar esferas em falha) e suspensão do `frameloop` quando a dimensão do viewport for ≤ 0
     - _Requirements: 1.6, 11.5_
 
-  - [~] 9.2 Implementar as esferas concêntricas, os anéis e as partículas
+  - [x] 9.2 Implementar as esferas concêntricas, os anéis e as partículas
     - Criar `scene/ConcentricSpheres.tsx` (4 esferas, raios crescentes, corte 90°, `DoubleSide`, material PBR, cor da paleta, destaque da Layer em foco), `scene/BoundaryRings.tsx` (3 anéis) e `scene/DataParticles.tsx` (`InstancedMesh` usando os helpers puros)
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 2.1, 2.2, 2.3, 2.4, 2.5, 4.8_
 
-  - [~] 9.3 Implementar o CameraController
+  - [x] 9.3 Implementar o CameraController
     - Criar `scene/CameraController.tsx` interpolando posição/alvo por `useFrame` com easing e duração resolvida, habilitando/desabilitando `OrbitControls` conforme `isTransitioning`, tratando câmera ausente como no-op e cancelando transição em curso no reset
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
 
@@ -201,12 +201,12 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Property 24: Aspect ratio no redimensionamento**
     - **Validates: Requirements 11.1**
 
-- [ ] 11. Implementar os componentes do UI Overlay (2D)
-  - [~] 11.1 Implementar o Overlay responsivo e os controles do tour
+- [x] 11. Implementar os componentes do UI Overlay (2D)
+  - [x] 11.1 Implementar o Overlay responsivo e os controles do tour
     - Criar `ui/Overlay.tsx` (layout responsivo aplicando os breakpoints) e `ui/TourControls.tsx` (botões avançar/retroceder, título/texto do passo, indicador "N de 8")
     - _Requirements: 4.7, 4.9, 11.2, 11.3, 11.4_
 
-  - [~] 11.2 Implementar o timer, o painel de notas e o fallback WebGL
+  - [x] 11.2 Implementar o timer, o painel de notas e o fallback WebGL
     - Criar `ui/PresentationTimer.tsx` (mm:ss + faixa de cor via helpers puros), `ui/PresenterNotesPanel.tsx` (visível/oculto, truncamento, estado vazio, atualização ao mudar de passo) e `ui/WebGLFallback.tsx` (mensagem de navegador incompatível)
     - _Requirements: 1.6, 6.1, 6.2, 6.3, 6.4, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6_
 
@@ -214,8 +214,8 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Verificar que mudar o passo ativo atualiza título/texto do overlay e o indicador "N de 8", e que o painel de notas atualiza o conteúdo exibido
     - _Requirements: 4.7, 4.9, 8.5_
 
-- [ ] 12. Implementar os adaptadores de plataforma
-  - [~] 12.1 Implementar o hook de atalhos de teclado com gating em inputs de texto
+- [x] 12. Implementar os adaptadores de plataforma
+  - [x] 12.1 Implementar o hook de atalhos de teclado com gating em inputs de texto
     - Criar `platform/useKeyboardShortcuts.ts` com `isEditableTarget(el)` e o roteamento das teclas (setas, espaço, F, N, R) para os comandos do store, ignorando quando o foco está em campo editável
     - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9_
 
@@ -223,7 +223,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Property 22: Atalhos ignorados em campos de texto editáveis**
     - **Validates: Requirements 7.9**
 
-  - [~] 12.3 Implementar os hooks de fullscreen, reduced-motion e breakpoint de viewport
+  - [x] 12.3 Implementar os hooks de fullscreen, reduced-motion e breakpoint de viewport
     - Criar `platform/useFullscreen.ts` (Fullscreen API tratando rejeição da Promise, evento `fullscreenchange` e Esc), `platform/useReducedMotion.ts` (`matchMedia` com listener) e `platform/useViewportBreakpoint.ts` (breakpoints + resize)
     - _Requirements: 2.3, 9.1, 9.2, 9.3, 9.4, 9.5, 11.1_
 
