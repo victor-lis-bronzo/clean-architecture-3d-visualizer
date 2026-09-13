@@ -39,6 +39,14 @@
     "12.2 Escrever teste de propriedade para o gating de teclas em campos editáveis": {
       "status": "passed",
       "lastRunTimestamp": 1789262031338
+    },
+    "3.4 Escrever teste de propriedade para destaque exclusivo da Layer": {
+      "status": "passed",
+      "lastRunTimestamp": 1789262556075
+    },
+    "3.5 Escrever teste de propriedade para o formato do indicador de progresso": {
+      "status": "passed",
+      "lastRunTimestamp": 1789262556832
     }
   },
   "executionHistory": {
@@ -445,6 +453,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789259623273
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262454334
       }
     ],
     "1. Configurar o scaffold do projeto e o tooling de qualidade": [
@@ -848,6 +861,78 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789262068865
+      }
+    ],
+    "11.3 Escrever teste de exemplo para a troca de texto do overlay": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262078052
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262453252
+      }
+    ],
+    "12.4 Escrever teste de integração para a Fullscreen API": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262079453
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262449503
+      }
+    ],
+    "13.2 Escrever teste de exemplo para o roteamento de teclas e o fluxo de erro de dados": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262080858
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262450927
+      }
+    ],
+    "15.2 Escrever teste de integração para o build estático": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262081604
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262452353
+      }
+    ],
+    "3.4 Escrever teste de propriedade para destaque exclusivo da Layer": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262465460
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262574586
+      }
+    ],
+    "3.5 Escrever teste de propriedade para o formato do indicador de progresso": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262465669
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789262573917
       }
     ]
   }

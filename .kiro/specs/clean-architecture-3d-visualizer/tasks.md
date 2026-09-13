@@ -67,11 +67,11 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Property 2: Reversibilidade da navegação no interior**
     - **Validates: Requirements 4.3, 4.4**
 
-  - [ ]* 3.4 Escrever teste de propriedade para destaque exclusivo da Layer
+  - [x]* 3.4 Escrever teste de propriedade para destaque exclusivo da Layer
     - **Property 3: Destaque exclusivo da Layer em foco**
     - **Validates: Requirements 4.8**
 
-  - [ ]* 3.5 Escrever teste de propriedade para o formato do indicador de progresso
+  - [x]* 3.5 Escrever teste de propriedade para o formato do indicador de progresso
     - **Property 4: Formato do indicador de progresso**
     - **Validates: Requirements 4.9**
 
@@ -210,7 +210,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar `ui/PresentationTimer.tsx` (mm:ss + faixa de cor via helpers puros), `ui/PresenterNotesPanel.tsx` (visível/oculto, truncamento, estado vazio, atualização ao mudar de passo) e `ui/WebGLFallback.tsx` (mensagem de navegador incompatível)
     - _Requirements: 1.6, 6.1, 6.2, 6.3, 6.4, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6_
 
-  - [ ]* 11.3 Escrever teste de exemplo para a troca de texto do overlay
+  - [x]* 11.3 Escrever teste de exemplo para a troca de texto do overlay
     - Verificar que mudar o passo ativo atualiza título/texto do overlay e o indicador "N de 8", e que o painel de notas atualiza o conteúdo exibido
     - _Requirements: 4.7, 4.9, 8.5_
 
@@ -227,7 +227,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar `platform/useFullscreen.ts` (Fullscreen API tratando rejeição da Promise, evento `fullscreenchange` e Esc), `platform/useReducedMotion.ts` (`matchMedia` com listener) e `platform/useViewportBreakpoint.ts` (breakpoints + resize)
     - _Requirements: 2.3, 9.1, 9.2, 9.3, 9.4, 9.5, 11.1_
 
-  - [ ]* 12.4 Escrever teste de integração para a Fullscreen API
+  - [x]* 12.4 Escrever teste de integração para a Fullscreen API
     - Verificar entrar/sair, tratamento de rejeição (mensagem + `console.error`) e saída via Esc, com a Fullscreen API mockada
     - _Requirements: 9.1, 9.2, 9.3, 9.5_
 
@@ -237,7 +237,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Ligar `main.tsx` ao `App.tsx`
     - _Requirements: 4.2, 5.3, 5.4, 9.3, 11.5_
 
-  - [ ]* 13.2 Escrever teste de exemplo para o roteamento de teclas e o fluxo de erro de dados
+  - [x]* 13.2 Escrever teste de exemplo para o roteamento de teclas e o fluxo de erro de dados
     - Verificar que teclas mapeadas acionam os comandos corretos via App e que Tour_Data inválido exibe a mensagem de erro sem iniciar o tour
     - _Requirements: 5.3, 5.4, 7.1, 7.3, 7.6, 7.7, 7.8_
 
@@ -249,11 +249,11 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Garantir que `vite build` gere `dist/` apenas com estáticos e respeite `base` de subcaminho; criar arquivos de configuração de deploy (ex.: `vercel.json` e/ou workflow do GitHub Pages) sem alterar código
     - _Requirements: 10.1, 10.3, 10.4_
 
-  - [ ]* 15.2 Escrever teste de integração para o build estático
+  - [x]* 15.2 Escrever teste de integração para o build estático
     - Verificar que o build produz `dist/` só com artefatos estáticos, que `base` de subcaminho gera caminhos corretos e que a falha de build encerra com exit code ≠ 0 sem escrever/modificar `dist/`
     - _Requirements: 10.1, 10.2, 10.4_
 
-- [~] 16. Checkpoint final — Garantir que todos os testes passam
+- [x] 16. Checkpoint final — Garantir que todos os testes passam
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes
