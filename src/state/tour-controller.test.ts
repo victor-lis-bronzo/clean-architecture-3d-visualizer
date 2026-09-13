@@ -136,6 +136,26 @@ describe('Tour_Controller — navegação pura', () => {
     );
   });
 
+  // Caso de overview: quando step.overview === true, computeHighlight suprime
+  // o destaque exclusivo e retorna todas as Layers como false (nenhum destaque).
+  it('computeHighlight retorna todas as Layers false quando overview é true (Validates: Requirements 4.8)', () => {
+    const step: TourStep = {
+      order: 8,
+      title: 'Síntese',
+      body: 'Visão geral final.',
+      focusLayer: 'Entities',
+      overview: true,
+      camera: { position: [-7.66, 5, -6.43], target: [0, 0, 0] },
+      notes: '',
+    };
+
+    const highlight = computeHighlight(step);
+
+    for (const layer of LAYER_ORDER) {
+      expect(highlight[layer]).toBe(false);
+    }
+  });
+
   // Feature: clean-architecture-3d-visualizer, Property 4: Formato do indicador de progresso. Para qualquer active em [1, count], formatProgress(active, count) produz a string "{active} de {count}" com active sempre dentro de [1, count].
   it('Property 4: formata o indicador de progresso como "{active} de {count}" (Validates: Requirements 4.9)', () => {
     fc.assert(
