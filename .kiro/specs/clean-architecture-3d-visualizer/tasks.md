@@ -119,7 +119,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar `state/selectors.ts` para leituras derivadas; definir estado inicial (passo 1 ativo, notas ocultas)
     - _Requirements: 4.2, 8.6_
 
-  - [ ]* 6.2 Escrever teste de exemplo para o estado inicial do store
+  - [x]* 6.2 Escrever teste de exemplo para o estado inicial do store
     - Verificar que ao carregar o store o passo 1 é o único ativo e `notesVisible` é `false`
     - _Requirements: 4.2, 8.6_
 
@@ -180,11 +180,11 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar `scene/CameraController.tsx` interpolando posição/alvo por `useFrame` com easing e duração resolvida, habilitando/desabilitando `OrbitControls` conforme `isTransitioning`, tratando câmera ausente como no-op e cancelando transição em curso no reset
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
 
-  - [ ]* 9.4 Escrever teste de exemplo para a montagem da cena
+  - [x]* 9.4 Escrever teste de exemplo para a montagem da cena
     - Usar `@react-three/test-renderer` para asserir 4 esferas, 3 anéis e o corte de 90°; verificar que nenhuma esfera é montada quando o WebGL não é suportado (fallback)
     - _Requirements: 1.1, 1.4, 1.5, 1.6_
 
-  - [ ]* 9.5 Escrever teste de propriedade para a suspensão de renderização
+  - [x]* 9.5 Escrever teste de propriedade para a suspensão de renderização
     - **Property 25: Suspensão de renderização em dimensão não positiva**
     - **Validates: Requirements 11.5**
 
@@ -219,7 +219,7 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar `platform/useKeyboardShortcuts.ts` com `isEditableTarget(el)` e o roteamento das teclas (setas, espaço, F, N, R) para os comandos do store, ignorando quando o foco está em campo editável
     - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9_
 
-  - [ ]* 12.2 Escrever teste de propriedade para o gating de teclas em campos editáveis
+  - [x]* 12.2 Escrever teste de propriedade para o gating de teclas em campos editáveis
     - **Property 22: Atalhos ignorados em campos de texto editáveis**
     - **Validates: Requirements 7.9**
 
@@ -241,11 +241,11 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Verificar que teclas mapeadas acionam os comandos corretos via App e que Tour_Data inválido exibe a mensagem de erro sem iniciar o tour
     - _Requirements: 5.3, 5.4, 7.1, 7.3, 7.6, 7.7, 7.8_
 
-- [~] 14. Checkpoint — Garantir que a aplicação integrada passa nos testes
+- [x] 14. Checkpoint — Garantir que a aplicação integrada passa nos testes
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 15. Configurar o build estático e o deploy
-  - [~] 15.1 Finalizar a configuração de build e os arquivos de deploy
+- [x] 15. Configurar o build estático e o deploy
+  - [x] 15.1 Finalizar a configuração de build e os arquivos de deploy
     - Garantir que `vite build` gere `dist/` apenas com estáticos e respeite `base` de subcaminho; criar arquivos de configuração de deploy (ex.: `vercel.json` e/ou workflow do GitHub Pages) sem alterar código
     - _Requirements: 10.1, 10.3, 10.4_
 
