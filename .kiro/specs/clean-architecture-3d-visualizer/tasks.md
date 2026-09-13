@@ -231,8 +231,8 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Verificar entrar/sair, tratamento de rejeição (mensagem + `console.error`) e saída via Esc, com a Fullscreen API mockada
     - _Requirements: 9.1, 9.2, 9.3, 9.5_
 
-- [ ] 13. Integrar tudo no App Shell
-  - [~] 13.1 Compor a Scene, o UI Overlay e os adaptadores
+- [x] 13. Integrar tudo no App Shell
+  - [x] 13.1 Compor a Scene, o UI Overlay e os adaptadores
     - Criar `App.tsx` compondo `SceneCanvas` + `Overlay`, ligando os hooks de plataforma ao store, com `ErrorBoundary` e exibição da mensagem de erro de validação do Tour_Data (não iniciar o tour em caso de erro)
     - Ligar `main.tsx` ao `App.tsx`
     - _Requirements: 4.2, 5.3, 5.4, 9.3, 11.5_

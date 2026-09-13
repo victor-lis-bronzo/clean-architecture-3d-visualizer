@@ -144,15 +144,26 @@ describe('Presentation_Timer — lógica pura', () => {
     });
 
     fc.assert(
-      fc.property(arbTimerState, (_state) => {
+      fc.property(arbTimerState, (state) => {
+        // `state` é um TimerState arbitrário (qualquer status e elapsedSec).
         // resetTimer() é incondicional e não recebe argumentos.
         const reset = resetTimer();
 
-        // Zera o tempo decorrido.
+        // Para QUALQUER estado de entrada, o reset zera o tempo decorrido...
         expect(reset.elapsedSec).toBe(0);
 
-        // Não está contando (status ≠ 'running').
+        // ...e produz um estado que não está contando (status ≠ 'running').
         expect(reset.status).not.toBe('running');
+
+        // Independência do estado de entrada: reiniciar a partir de `state`
+        // produz sempre o mesmo resultado, sem depender de state.status/elapsedSec.
+        const resetFromState = resetTimer();
+        expect(resetFromState.elapsedSec).toBe(0);
+        expect(resetFromState.status).not.toBe('running');
+        expect(resetFromState).toEqual(reset);
+
+        // O reset descarta o tempo acumulado, qualquer que seja `state.elapsedSec`.
+        expect(reset.elapsedSec).toBeLessThanOrEqual(state.elapsedSec);
       }),
       { numRuns: 100 },
     );
