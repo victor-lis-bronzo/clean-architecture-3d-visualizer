@@ -164,4 +164,18 @@ describe('camera-math — helpers puros de câmera', () => {
       );
     });
   });
+
+  // ─── TASK 8.5 ──────────────────────────────────────────────────────────
+  // Feature: clean-architecture-3d-visualizer, Property 16: Gating dos controles manuais de câmera. Para qualquer estado do Camera_Controller, orbitEnabled(state) === !state.isTransitioning (órbita/zoom/pan habilitados se e somente se não há transição em andamento).
+  describe('Property 16: gating dos controles manuais de câmera', () => {
+    it('orbitEnabled(state) === !state.isTransitioning (Validates: Requirements 3.4, 3.5)', () => {
+      fc.assert(
+        fc.property(fc.boolean(), (isTransitioning) => {
+          const state: CameraGateState = { isTransitioning };
+          expect(orbitEnabled(state)).toBe(!isTransitioning);
+        }),
+        { numRuns: 100 },
+      );
+    });
+  });
 });
