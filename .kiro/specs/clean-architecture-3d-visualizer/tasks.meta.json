@@ -197,6 +197,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260645781
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261051181
       }
     ],
     "7. Checkpoint — Garantir que a lógica pura e o store passam nos testes": [
@@ -532,6 +537,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260642206
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261054935
       }
     ],
     "8.7 Escrever teste de propriedade para o clamp da contagem de partículas": [
@@ -539,6 +549,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260643606
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261060131
       }
     ],
     "10.2 Escrever teste de propriedade para a visibilidade responsiva por breakpoint": [
@@ -546,6 +561,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260645010
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261052579
       }
     ],
     "8.3 Escrever teste de propriedade para o clamp da duração da transição": [
@@ -553,6 +573,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260650477
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261056338
       }
     ],
     "8.4 Escrever teste de propriedade para o no-op de câmera ausente": [
@@ -560,6 +585,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260651878
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261057780
       }
     ],
     "8.5 Escrever teste de propriedade para o gating dos controles manuais": [
@@ -567,6 +597,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260652827
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261058730
       }
     ],
     "8.8 Escrever teste de propriedade para a contenção das partículas": [
@@ -574,6 +609,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260654226
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261061079
       }
     ],
     "8.9 Escrever teste de propriedade para o congelamento sob reduced-motion": [
@@ -581,6 +621,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260655183
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261062479
       }
     ],
     "8.10 Escrever teste de propriedade para a direção das partículas": [
@@ -588,6 +633,11 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260656578
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261063486
       }
     ],
     "10.3 Escrever teste de propriedade para o aspect ratio no redimensionamento": [
@@ -595,6 +645,18 @@
         "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
         "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
         "timestamp": 1789260657612
+      },
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261053980
+      }
+    ],
+    "6. Implementar o Presentation Store (Zustand)": [
+      {
+        "executionId": "4a161f24-14c7-40c7-a9c4-1df43ba134b0",
+        "chatSessionId": "acf1c3bb-d8d3-4468-a358-f2cc19182611",
+        "timestamp": 1789261051184
       }
     ]
   }

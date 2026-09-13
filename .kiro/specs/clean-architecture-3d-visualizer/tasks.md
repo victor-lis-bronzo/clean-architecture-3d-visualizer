@@ -113,8 +113,8 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - **Property 19: Estado vazio das notas**
     - **Validates: Requirements 8.4**
 
-- [ ] 6. Implementar o Presentation Store (Zustand)
-  - [-] 6.1 Criar o store compartilhado e os seletores
+- [x] 6. Implementar o Presentation Store (Zustand)
+  - [x] 6.1 Criar o store compartilhado e os seletores
     - Criar `state/presentation-store.ts` (Zustand) com `activeStepOrder`, `transition`, `timer`, `notesVisible` (inicia `false`), `isFullscreen`, `dataError`, `webglSupported`, e as ações `next`/`prev`/`resetCamera`/`toggleNotes`/`setFullscreen` delegando às funções puras
     - Criar `state/selectors.ts` para leituras derivadas; definir estado inicial (passo 1 ativo, notas ocultas)
     - _Requirements: 4.2, 8.6_
@@ -131,19 +131,19 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar helpers (ex.: `scene/camera-math.ts`) com `easing(t)`, `lerp(a, b, t)`, `resolveDuration(d)` (clamp 0,3–2,0; default 1,0), `orbitEnabled(state)` e a regra de no-op para câmera ausente
     - _Requirements: 3.1, 3.2, 3.4, 3.5, 3.6_
 
-  - [-]* 8.2 Escrever teste de propriedade para o easing com velocidade nula nas extremidades
+  - [x]* 8.2 Escrever teste de propriedade para o easing com velocidade nula nas extremidades
     - **Property 13: Easing com velocidade nula nas extremidades**
     - **Validates: Requirements 3.1**
 
-  - [-]* 8.3 Escrever teste de propriedade para o clamp da duração da transição
+  - [x]* 8.3 Escrever teste de propriedade para o clamp da duração da transição
     - **Property 14: Clamp da duração da transição de câmera**
     - **Validates: Requirements 3.2**
 
-  - [-]* 8.4 Escrever teste de propriedade para o no-op de câmera ausente
+  - [x]* 8.4 Escrever teste de propriedade para o no-op de câmera ausente
     - **Property 15: Ausência de configuração de câmera é no-op**
     - **Validates: Requirements 3.6**
 
-  - [-]* 8.5 Escrever teste de propriedade para o gating dos controles manuais
+  - [x]* 8.5 Escrever teste de propriedade para o gating dos controles manuais
     - **Property 16: Gating dos controles manuais de câmera**
     - **Validates: Requirements 3.4, 3.5**
 
@@ -151,19 +151,19 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar `scene/geometry.ts` (raios estritamente crescentes, corte de 90° via `phiLength`) e helpers de partículas com `clampParticleCount(n)` (20..200), atualização de quadro com contenção/reciclagem, no-op sob `reducedMotion` e `particleDirectionFor(step)`
     - _Requirements: 1.2, 1.4, 2.1, 2.2, 2.3, 2.4, 2.5_
 
-  - [-]* 8.7 Escrever teste de propriedade para o clamp da contagem de partículas
+  - [x]* 8.7 Escrever teste de propriedade para o clamp da contagem de partículas
     - **Property 9: Clamp da contagem de partículas**
     - **Validates: Requirements 2.1, 2.4**
 
-  - [-]* 8.8 Escrever teste de propriedade para a contenção das partículas
+  - [x]* 8.8 Escrever teste de propriedade para a contenção das partículas
     - **Property 10: Contenção das partículas dentro dos limites**
     - **Validates: Requirements 2.5**
 
-  - [-]* 8.9 Escrever teste de propriedade para o congelamento sob reduced-motion
+  - [x]* 8.9 Escrever teste de propriedade para o congelamento sob reduced-motion
     - **Property 11: Congelamento sob prefers-reduced-motion**
     - **Validates: Requirements 2.3**
 
-  - [-]* 8.10 Escrever teste de propriedade para a direção das partículas
+  - [x]* 8.10 Escrever teste de propriedade para a direção das partículas
     - **Property 12: Direção das partículas coerente com o passo**
     - **Validates: Requirements 2.2**
 
@@ -193,11 +193,11 @@ A implementação usa **TypeScript** com **Vite + React + Tailwind CSS**, **Thre
     - Criar helpers (ex.: `ui/responsive.ts`) com `computeAspect(w, h)`, `shouldRender(w, h)` e o mapeamento de visibilidade por breakpoint (≥1024, 640–1024, <640) mantendo os controles sempre visíveis
     - _Requirements: 11.1, 11.2, 11.3, 11.4_
 
-  - [-]* 10.2 Escrever teste de propriedade para a visibilidade responsiva por breakpoint
+  - [x]* 10.2 Escrever teste de propriedade para a visibilidade responsiva por breakpoint
     - **Property 23: Visibilidade responsiva monotônica por breakpoint**
     - **Validates: Requirements 11.2, 11.3, 11.4**
 
-  - [-]* 10.3 Escrever teste de propriedade para o aspect ratio no redimensionamento
+  - [x]* 10.3 Escrever teste de propriedade para o aspect ratio no redimensionamento
     - **Property 24: Aspect ratio no redimensionamento**
     - **Validates: Requirements 11.1**
 
